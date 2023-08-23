@@ -1,0 +1,17 @@
+gui:
+  theme:
+    selectedLineColor:
+      - underline
+    selectedRangeBgColor:
+      - underline
+    activeBorderColor:
+      - green
+      - bold
+    inactiveBorderColor:
+      - white
+    optionsTextColor:
+      - blue
+git:
+  paging:
+    colorArg: never
+    pager: delta --dark --paging=never

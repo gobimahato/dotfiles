@@ -1,0 +1,99 @@
+env:
+  TERM: xterm-256color
+
+window:
+  padding:
+    x: 6
+    y: 0
+
+  title: Alacritty
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: Cartograph CF 
+    style:  Extra Light 
+  bold:
+    family: Cartograph CF 
+    style:  Bold
+  italic:
+    family: Cartograph CF 
+    style:  Italic
+  bold_italic:
+    family: Cartograph CF 
+    style: Bold Italic
+
+  size: 15
+  
+draw_bold_text_with_bright_colors: true
+
+schemes:
+  moonfly: &Moonfly
+    primary:
+      background: "#080808"
+      foreground: "#bdbdbd"
+      bright_foreground: "#eeeeee"
+
+    # Cursor colors
+    cursor:
+      text: "#080808"
+      cursor: "#9e9e9e"
+
+    # Selection colors
+    selection:
+      text: "#080808"
+      background: "#b2ceee"
+
+    # Normal colors
+    normal:
+      black: "#323437"
+      red: "#ff5454"
+      green: "#8cc85f"
+      yellow: "#e3c78a"
+      blue: "#80a0ff"
+      magenta: "#cf87e8"
+      cyan: "#79dac8"
+      white: "#c6c6c6"
+
+    # Bright colors
+    bright:
+      black: "#949494"
+      red: "#ff5189"
+      green: "#36c692"
+      yellow: "#c2c292"
+      blue: "#74b2ff"
+      magenta: "#ae81ff"
+      cyan: "#85dc85"
+      white: "#e4e4e4"
+
+colors: *Moonfly
+
+selection:
+  save_to_clipboard: false
+
+window.opacity: 1
+
+key_bindings:
+  - { key: V, mods: Control|Shift, action: Paste }
+  - { key: C, mods: Control|Shift, action: Copy }
+  - { key: Insert, mods: Shift, action: PasteSelection }
+  - { key: Key0, mods: Control, action: ResetFontSize }
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - { key: Plus, mods: Control, action: IncreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
+  - { key: F11, mods: None, action: ToggleFullscreen }
+  - { key: Paste, mods: None, action: Paste }
+  - { key: Copy, mods: None, action: Copy }
+  - { key: L, mods: Control, action: ClearLogNotice }
+  - { key: L, mods: Control, chars: "\x0c" }
+  - { key: PageUp, mods: None, action: ScrollPageUp, mode: ~Alt }
+  - { key: PageDown, mods: None, action: ScrollPageDown, mode: ~Alt }
+  - { key: Home, mods: Shift, action: ScrollToTop, mode: ~Alt }
+  - { key: End, mods: Shift, action: ScrollToBottom, mode: ~Alt }
+
