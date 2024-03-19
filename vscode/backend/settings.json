@@ -1,0 +1,103 @@
+{
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "Orbi Red",
+  // Theming Style
+  "editor.fontFamily": "Cartograph CF",
+  "editor.fontWeight": "200",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 17,
+  "editor.lineHeight": 1.45,
+  "editor.cursorBlinking": "smooth",
+  "editor.semanticHighlighting.enabled": false,
+  "editor.formatOnSave": true,
+  "workbench.startupEditor": "none",
+  "workbench.editor.wrapTabs": false,
+  "breadcrumbs.enabled": false,
+  "window.menuBarVisibility": "toggle",
+  "window.zoomLevel": 1,
+  // Editor
+  "editor.tabSize": 2,
+  "editor.linkedEditing": true,
+  "editor.mouseWheelZoom": true,
+  "editor.smoothScrolling": true,
+  "editor.minimap.enabled": false,
+  "editor.detectIndentation": true,
+  "editor.renderWhitespace": "none",
+  "editor.snippetSuggestions": "top",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.scrollbar.verticalScrollbarSize": 6,
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.bracketPairColorization.enabled": true,
+  "files.defaultLanguage": "${activeEditorLanguage}",
+  "editor.glyphMargin": true, // comment out to "ON"
+  // "editor.folding": false, // comment out to "ON"
+  "explorer.confirmDelete": false,
+  // Explorer
+  "explorer.openEditors.visible": 1,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.enabled": true,
+  // terminal
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.external.linuxExec": "/usr/bin/alacritty",
+  "terminal.integrated.confirmOnExit": "hasChildProcesses",
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  // extensions : git
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "never",
+  "diffEditor.ignoreTrimWhitespace": false,
+  // extensions : CPP
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "settings.cycle": [
+    {
+      "id": "lineNumbers",
+      "values": [
+        {
+          "editor.lineNumbers": "off",
+          "editor.folding": false,
+          "editor.glyphMargin": false
+        },
+        {
+          "editor.lineNumbers": "on",
+          "editor.folding": true,
+          "editor.glyphMargin": true
+        }
+      ]
+    }
+  ],
+  "editor.lineNumbers": "on",
+  "editor.folding": true,
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MariaDB",
+      "name": "mysql1",
+      "database": "testDB",
+      "username": "root",
+      "askForPassword": true
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "askForPassword": true,
+      "driver": "PostgreSQL",
+      "name": "postgres1",
+      "database": "testdb",
+      "username": "testuser"
+    }
+  ],
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
+  "workbench.iconTheme": "helium-icon-theme"
+}
